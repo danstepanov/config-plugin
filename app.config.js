@@ -1,4 +1,6 @@
-{
+const withCustomPermissions = require('./plugins/withCustomPermissions.ts');
+
+module.exports = {
   "expo": {
     "name": "my-expo-app",
     "slug": "my-expo-app",
@@ -12,7 +14,7 @@
       "tsconfigPaths": true
     },
 
-    "plugins": [],
+    "plugins": [withCustomPermissions],
 
     "orientation": "portrait",
     "icon": "./assets/icon.png",
